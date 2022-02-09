@@ -4,10 +4,23 @@ import './App.css'
 //Class BAsed Component
 class App extends React.Component {
 
+    //Understanding States
+    state = {
+        headerText: "This is a cool app!",
+    };
+
     render () {
         return (
             <div>
-                <Header></Header>
+                <Header/>
+                <h3>{this.state.headerText}</h3>
+                <button 
+                    onClick={() => {
+                        this.setstate({
+                            headerText: "It worked!"
+                        });
+                }}>Click Me for State Change
+                </button>
             </div>
         );
     }
