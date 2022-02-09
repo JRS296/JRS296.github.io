@@ -7,15 +7,22 @@ class App extends React.Component {
 
     //Understanding States
     //Props - Data for communication between parent and child
-    state = {
-        headerText: "Name It!",
-    };
+    constructor() {
+        super();
+        this.state = {
+            headerText: "Name It!",
+        };
+    }
+    
+    handleInputChange = (inputText) => {
+        console.log("Input Text: ", inputText);
+    }
 
     render () {
         return (
             <div>
                 <Header headTitle={this.state.headerText} />
-                <Searchbox />
+                <Searchbox onInputChange={this.handleInputChange}/>
             </div>
         );
     }
