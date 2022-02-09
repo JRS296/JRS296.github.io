@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Searchbox from '../Searchbox/Searchbox';
 import './App.css'
 //Class BAsed Component
 class App extends React.Component {
@@ -14,7 +15,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header headTitle={this.state.headerText} />
-                
+                <Searchbox />
             </div>
         );
     }
