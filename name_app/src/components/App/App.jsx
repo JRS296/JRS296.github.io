@@ -5,22 +5,16 @@ import './App.css'
 class App extends React.Component {
 
     //Understanding States
+    //Props - Data for communication between parent and child
     state = {
-        headerText: "This is a cool app!",
+        headerText: "Name It!",
     };
 
     render () {
         return (
             <div>
-                <Header/>
-                <h3>{this.state.headerText}</h3>
-                <button 
-                    onClick={() => {
-                        this.setstate({
-                            headerText: "It worked!"
-                        });
-                }}>Click Me for State Change
-                </button>
+                <Header headTitle={this.state.headerText} />
+                
             </div>
         );
     }
