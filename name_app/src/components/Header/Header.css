@@ -1,0 +1,15 @@
+.head-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.head-img {
+    width: 250px;
+}
+
+.head-txt {
+    font-family: 'Hachi Maru Pop', cursive;
+    margin: 5px 0 15px 0;
+}
