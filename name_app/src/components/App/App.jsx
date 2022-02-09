@@ -11,17 +11,22 @@ class App extends React.Component {
         super();
         this.state = {
             headerText: "Name It!",
+            headerExpanded: true
         };
     }
     
     handleInputChange = (inputText) => {
         console.log("Input Text: ", inputText);
+        this.setState({headerExpanded: inputText.length > 0 ? false : true}) // CAn also use !(inputText.length > 0) or !input
     }
 
     render () {
         return (
             <div>
-                <Header headTitle={this.state.headerText} />
+                <Header 
+                    headTitle={this.state.headerText} 
+                    headerExpanded={this.state.headerExpanded}
+                />
                 <Searchbox onInputChange={this.handleInputChange}/>
             </div>
         );
