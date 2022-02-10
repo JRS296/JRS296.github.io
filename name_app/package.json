@@ -2,7 +2,7 @@
   "name": "name_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JRS296.github.io/React-Projects-1---Name-Card-App/",
+  "homepage": "https://JRS296.github.io/",
   "dependencies": {
     "@rstacruz/startup-name-generator": "0.3.0",
     "@testing-library/jest-dom": "^5.16.2",
